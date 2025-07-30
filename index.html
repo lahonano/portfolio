@@ -19,20 +19,23 @@ body {
 }
 
 #menu {
-  width: 280px;
-  padding: 60px 30px;
-  border-right: 1px solid #e0e0e0;
+  width: 260px;
+  padding: 40px 25px;
   position: fixed;
-  height: 100vh;
+  top: 30px;
+  left: 30px;
+  height: calc(100vh - 120px);
   overflow-y: auto;
-  background: #fff;
+  background: #fafafa;
   z-index: 100;
+  border-radius: 8px;
+  border: 1px solid #002fa7;
 }
 
 #menu h1 {
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   letter-spacing: 0;
   color: #111;
 }
@@ -42,8 +45,8 @@ body {
   font-size: 14px;
   color: #666;
   text-decoration: none;
-  margin-bottom: 8px;
-  padding: 6px 0;
+  margin-bottom: 4px;
+  padding: 4px 0;
   transition: all 0.2s ease;
   border-left: 2px solid transparent;
   padding-left: 12px;
@@ -63,7 +66,7 @@ body {
 }
 
 #content {
-  margin-left: 280px;
+  margin-left: 350px;
   padding: 60px 80px;
   max-width: 1000px;
   min-height: 100vh;
@@ -197,11 +200,14 @@ a:hover {
 /* Responsive design */
 @media (max-width: 1024px) {
   #menu {
-    width: 250px;
+    width: 220px;
+    left: 20px;
+    top: 20px;
+    height: calc(100vh - 100px);
   }
   
   #content {
-    margin-left: 250px;
+    margin-left: 280px;
     padding: 40px 60px;
   }
 }
@@ -212,22 +218,24 @@ a:hover {
   }
   
   #menu {
-    width: 100%;
+    width: calc(100% - 40px);
     height: auto;
     position: relative;
-    padding: 30px;
-    border-right: none;
-    border-bottom: 1px solid #e0e0e0;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 8px;
   }
   
   #menu h1 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   
   #menu a {
     display: inline-block;
-    margin-right: 20px;
-    margin-bottom: 8px;
+    margin-right: 15px;
+    margin-bottom: 6px;
   }
   
   #content {
