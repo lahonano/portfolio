@@ -11,7 +11,7 @@
 
 body {
   margin: 0;
-  font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+  font-family: 'Times New Roman', 'Georgia', serif;
   display: flex;
   background: #fafafa;
   color: #111;
@@ -30,20 +30,20 @@ body {
 }
 
 #menu h1 {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
   margin-bottom: 40px;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   color: #111;
 }
 
 #menu a {
   display: block;
-  font-size: 15px;
+  font-size: 14px;
   color: #666;
   text-decoration: none;
-  margin-bottom: 12px;
-  padding: 8px 0;
+  margin-bottom: 8px;
+  padding: 6px 0;
   transition: all 0.2s ease;
   border-left: 2px solid transparent;
   padding-left: 12px;
@@ -51,15 +51,15 @@ body {
 }
 
 #menu a:hover {
-  color: #111;
+  color: #002fa7;
   transform: translateX(4px);
 }
 
 #menu a.active {
-  color: #111;
-  font-weight: 600;
-  border-left-color: #111;
-  background: rgba(0,0,0,0.02);
+  color: #002fa7;
+  font-weight: bold;
+  border-left-color: #002fa7;
+  background: rgba(0, 47, 167, 0.03);
 }
 
 #content {
@@ -84,10 +84,10 @@ body {
 }
 
 .project-title {
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: 400;
   margin-bottom: 8px;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
 }
 
 .project-meta {
@@ -106,15 +106,14 @@ body {
 }
 
 a {
-  color: #111;
-  text-decoration: underline;
-  text-decoration-color: #ccc;
-  text-underline-offset: 4px;
+  color: #002fa7;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
   transition: all 0.2s ease;
 }
 
 a:hover {
-  text-decoration-color: #111;
+  text-decoration: underline solid;
 }
 
 .gallery {
@@ -147,18 +146,18 @@ a:hover {
 }
 
 .lang-switch a {
-  background: #111;
+  background: #002fa7;
   color: #fff;
-  padding: 8px 16px;
-  border-radius: 20px;
+  padding: 6px 14px;
+  border-radius: 3px;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: normal;
   transition: all 0.2s ease;
 }
 
 .lang-switch a:hover {
-  background: #333;
+  background: #001f5c;
   transform: scale(1.05);
 }
 
@@ -177,20 +176,22 @@ a:hover {
 }
 
 #kontakt .project-desc a {
-  color: #111;
+  color: #fff;
   text-decoration: none;
-  border: 2px solid #111;
-  padding: 12px 24px;
-  border-radius: 6px;
+  background: #002fa7;
+  border: 2px solid #002fa7;
+  padding: 10px 20px;
+  border-radius: 3px;
   display: inline-block;
   margin-top: 20px;
   transition: all 0.2s ease;
+  font-weight: normal;
 }
 
 #kontakt .project-desc a:hover {
-  background: #111;
-  color: #fff;
-  transform: translateY(-2px);
+  background: #001f5c;
+  border-color: #001f5c;
+  transform: translateY(-1px);
 }
 
 /* Responsive design */
@@ -235,7 +236,7 @@ a:hover {
   }
   
   .project-title {
-    font-size: 28px;
+    font-size: 24px;
   }
   
   .gallery {
