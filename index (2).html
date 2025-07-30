@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jacek Laube</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, serif;
+      display: flex;
+      background-color: white;
+      color: black;
+    }
+    #menu {
+      width: 260px;
+      padding: 40px 20px;
+      background-color: white;
+      border-right: 1px solid #ccc;
+      height: 100vh;
+      overflow-y: auto;
+      position: fixed;
+    }
+    #menu h1 {
+      font-size: 20px;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+    #menu a {
+      display: block;
+      font-size: 14px;
+      color: black;
+      text-decoration: none;
+      margin-bottom: 6px;
+    }
+    #menu a.active {
+      color: #39ff14;
+      font-weight: bold;
+    }
+    #content {
+      margin-left: 260px;
+      padding: 40px;
+      max-width: 800px;
+    }
+    .project-title {
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+    .project-meta {
+      font-size: 13px;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 14px;
+    }
+    .project-desc {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .section {
+      display: none;
+    }
+    .section.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="menu">
+    <h1>Jacek Laube</h1>
+    <a href="#bio">Bio</a>
+    <a href="#syndrom" class="active">Syndrom Amnezji Anarchiwalnej</a>
+    <a href="#przemeblowanie">Przemeblowanie</a>
+    <a href="#rothko">Rothko’s Bodyguards</a>
+    <a href="#spinoff">SpinOFF</a>
+    <a href="#miracle">The Miracle of Life</a>
+    <a href="#karaoke">Polish Karaoke</a>
+    <a href="#robakowski">Gest 3 (Hommage à Robakowski)</a>
+    <a href="#opalka">420–420 (Hommage à Opałka)</a>
+    <a href="#doit">do it: Polska premiera</a>
+    <a href="#salony">Salony Fotografii</a>
+    <a href="#ep1">EP1</a>
+    <a href="#kontakt">Kontakt</a>
+  </div>
+
+  <div id="content">
+    <div id="bio" class="section">
+      <div class="project-title">Bio</div>
+      <div class="project-desc">Artysta wizualny, kurator i badacz. Pracuje z dokumentem, wystawami i teorią paranoi.</div>
+    </div>
+
+    <div id="syndrom" class="section active">
+      <div class="project-title">Syndrom Amnezji Anarchiwalnej</div>
+      <div class="project-meta">autor koncepcji</div>
+      <div class="project-meta">2025–</div>
+      <div class="project-desc">Projekt badawczo-artystyczny eksplorujący struktury paranoiczne, archiwum jako przestrzeń konstrukcji pamięci i elementy teorii spiskowych jako medium estetyczne. Wystawa, gra planszowa i eksperymentalny scenariusz filmowy jako spójna instalacja.</div>
+    </div>
+
+    <div id="przemeblowanie" class="section">
+      <div class="project-title">Przemeblowanie</div>
+      <div class="project-meta">autor koncepcji, reżyseria</div>
+      <div class="project-meta">2023–</div>
+      <div class="project-desc">Instalacja oparta na rejestracji transformacji przestrzeni domowej. Wystawa jako forma dokumentalnego portretu i intymnej narracji o czasie, pamięci i porządku.</div>
+    </div>
+
+    <div id="rothko" class="section">
+      <div class="project-title">Rothko’s Bodyguards</div>
+      <div class="project-meta">autor koncepcji</div>
+      <div class="project-meta">2025</div>
+      <div class="project-desc">Projekt spekulatywny o ochronie obrazów, władzy instytucji i fikcyjnych rytuałach opieki nad dziełami sztuki. Wideo, scenariusz i model ochrony.</div>
+    </div>
+
+    <div id="spinoff" class="section">
+      <div class="project-title">SpinOFF</div>
+      <div class="project-meta">współkurator, współorganizator</div>
+      <div class="project-meta">2024–</div>
+      <div class="project-desc">Niezależny festiwal fotografii i sztuk wizualnych w Łodzi. Prezentacje wystaw i performansów w przestrzeniach nieinstytucjonalnych.</div>
+    </div>
+
+    <div id="miracle" class="section">
+      <div class="project-title">The Miracle of Life</div>
+      <div class="project-meta">kurator</div>
+      <div class="project-meta">2019</div>
+      <div class="project-meta">artystka: Sara Rogowska</div>
+      <div class="project-desc">Projekt oparty na fotografii kirlianowskiej. Wystawa bada duchowość i mikroenergetykę obiektów organicznych.</div>
+    </div>
+
+    <div id="karaoke" class="section">
+      <div class="project-title">Polish Karaoke</div>
+      <div class="project-meta">kurator</div>
+      <div class="project-meta">2020</div>
+      <div class="project-desc">Wystawa i performans badające relacje pomiędzy językiem, nacjonalizmem i wspólnotowym śpiewem.</div>
+    </div>
+
+    <div id="robakowski" class="section">
+      <div class="project-title">Gest 3 (Hommage à Robakowski)</div>
+      <div class="project-meta">autor koncepcji</div>
+      <div class="project-meta">2017</div>
+      <div class="project-desc">Performans i gest filmowy inspirowany twórczością Józefa Robakowskiego. Rejestracja ciała i obrazu.</div>
+    </div>
+
+    <div id="opalka" class="section">
+      <div class="project-title">420–420 (Hommage à Opałka)</div>
+      <div class="project-meta">autor</div>
+      <div class="project-meta">2017</div>
+      <div class="project-desc">Numerologiczna praca wideo o czasie i powtarzalności. Odliczanie, głos i rytuał.</div>
+    </div>
+
+    <div id="doit" class="section">
+      <div class="project-title">do it: Polska premiera</div>
+      <div class="project-meta">kurator</div>
+      <div class="project-meta">2018</div>
+      <div class="project-desc">Wystawa realizowana na podstawie międzynarodowego projektu „do it”. Adaptacja instrukcji artystycznych (Yoko Ono, Abramović, Lynch) oraz zaproszenie polskich artystów do stworzenia nowych. WI-MA, Łódź.</div>
+    </div>
+
+    <div id="salony" class="section">
+      <div class="project-title">Salony Fotografii</div>
+      <div class="project-meta">kurator</div>
+      <div class="project-meta">2018</div>
+      <div class="project-desc">Wystawa ukazująca 25 lat fotografii w Szkole Filmowej w Łodzi. Edycje w Łodzi, Gdańsku i Świdnicy.</div>
+    </div>
+
+    <div id="ep1" class="section">
+      <div class="project-title">EP1</div>
+      <div class="project-meta">współkurator</div>
+      <div class="project-meta">2017</div>
+      <div class="project-desc">Wystawa studentów i pedagogów Szkoły Filmowej. Eksperymenty z formą ekspozycji w przestrzeniach edukacyjnych.</div>
+    </div>
+
+    <div id="kontakt" class="section">
+      <div class="project-title">Kontakt</div>
+      <div class="project-desc">laskalasocki@gmail.com</div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('#menu a');
+      const sections = document.querySelectorAll('.section');
+
+      function activate(hash) {
+        sections.forEach(section => section.classList.remove('active'));
+        const selected = document.querySelector(hash);
+        if (selected) selected.classList.add('active');
+
+        links.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === hash) link.classList.add('active');
+        });
+      }
+
+      links.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const hash = this.getAttribute('href');
+          activate(hash);
+          history.pushState(null, '', hash);
+        });
+      });
+
+      const initial = window.location.hash || '#syndrom';
+      activate(initial);
+    });
+  </script>
+
+
+  <div style="position:fixed; top:20px; right:20px; font-family:Georgia, serif; font-size:14px;">
+    <a href="en/index.html" style="text-decoration:none; color:black;">EN</a>
+  </div>
+</body>
+
+</html>
