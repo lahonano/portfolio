@@ -133,6 +133,14 @@ a:hover {
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
   transition: all 0.3s ease;
   cursor: pointer;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .gallery img:hover {
@@ -315,7 +323,28 @@ html {
 <div class="project-title">Przemeblowanie</div>
 <div class="project-meta">autor koncepcji, reżyseria</div>
 <div class="project-meta">2023–</div>
-<div class="project-desc">Ekspozycja przygotowana przez Jacka Laube, wnuka zmarłej niedawno Alicji Naruszewicz-Petrenko – Babci, Artystki i wieloletniej lokatorki mieszkania przy ulicy Kilińskiego 27/29. Wystawa odbywała się w dwóch miejscach: ul. Włókiennicza 1 i ul. Kilińskiego 27/29 m.5. Zainspirowane twórczością Haralda Szeemanna, przenosi widzów do prywatnej przestrzeni mieszkania, zachęcając do kontemplacji własnych marzeń, aspiracji i dziedzictwa. To wystawa łącząca tematykę utraty, pamięci, pustki oraz osobistej historii.</div>
+<div class="project-desc">Ekspozycja przygotowana przez Jacka Laube, wnuka zmarłej niedawno Alicji Naruszewicz-Petrenko – Babci, Artystki i wieloletniej lokatorki mieszkania przy ulicy Kilińskiego 27/29. Wystawa odbywała się w dwóch miejscach: ul. Włókiennicza 1 i ul. Kilińskiego 27/29 m.5. Zainspirowane twórczością Haralda Szeemanna, przenosi widzów do prywatnej przestrzeni mieszkania, zachęcając do kontemplacji własnych marzeń, aspiracji i dziedzictwa. To wystawa łącząca tematykę utraty, pamięci, pustki oraz osobistej historii.
+<h3>Lokalizacja 1: ul. Kilińskiego 27/29 m.5</h3>
+<div class="gallery" id="gallery-kilinskiego" style="background-color: rgba(0, 47, 167, 0.7); padding: 20px; border-radius: 8px;">
+  <a href="img/kilinskiego1.jpg" data-lg-size="1600-1067">
+    <img src="img/kilinskiego1.jpg" alt="Instalacja – Kilińskiego" />
+  </a>
+  <a href="img/kilinskiego2.jpg" data-lg-size="1600-1067">
+    <img src="img/kilinskiego2.jpg" alt="Detal projektu – Kilińskiego" />
+  </a>
+</div>
+
+<h3>Lokalizacja 2: ul. Włókiennicza 1</h3>
+<div class="gallery" id="gallery-wlokiennicza" style="background-color: rgba(0, 47, 167, 0.7); padding: 20px; border-radius: 8px;">
+  <a href="img/wlokiennicza1.jpg" data-lg-size="1600-1067">
+    <img src="img/wlokiennicza1.jpg" alt="Galeria – Włókiennicza 1" />
+  </a>
+  <a href="img/wlokiennicza2.jpg" data-lg-size="1600-1067">
+    <img src="img/wlokiennicza2.jpg" alt="Pomieszczenie – Włókiennicza 1" />
+  </a>
+</div>
+
+</div>
 </div>
 
 <div class="section" id="psiepolaroidy">
@@ -452,5 +481,14 @@ html {
     speed: 500
   });
 </script>
+
+<script>
+  document.addEventListener('contextmenu', function (e) {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+  });
+</script>
+
 </body>
 </html>
